@@ -23,18 +23,19 @@ public class LexicographicalSubString {
      */
 
     public static void main(String[] args) {
-        LexicographicalSubString.getSmallestAndLargest("welcometojava", 3);
+        System.out.println("First and Last Lexi substring of ilovejava - 3 are "+LexicographicalSubString.getFirstAndLast("ilovejava", 3));
+        System.out.println("First and Last Lexi substring of ilovejava - 4 are "+LexicographicalSubString.getFirstAndLast("ilovejava", 4));
     }
 
-    public static String getSmallestAndLargest(String s, int k) {
+    public static String getFirstAndLast(String s, int k) {
         String smallest = "";
         String largest = "";
 
         Set<String> elements = new TreeSet<String>();
         for(int i = 0 ; i < k ; i++){
-            for(int j = i ; j < s.length() && (j+3) <= s.length(); j = j+3){
-                elements.add(s.substring(j,(j+3) ));
-                //System.out.println("Element added was "+s.substring(j, (j+3)));
+            for(int j = i ; j < s.length()-k+1 ; j = j+k){
+                elements.add(s.substring(j,(j+k) ));
+                //System.out.println("Element added was "+s.substring(j, (j+k)));
             }
         }
 
@@ -43,6 +44,7 @@ public class LexicographicalSubString {
         smallest = strArray[0].toString();
         largest = strArray[strArray.length-1].toString();
 
-        return smallest + "\n" + largest;
+
+        return smallest + ", " + largest;
     }
 }
