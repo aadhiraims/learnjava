@@ -2,7 +2,7 @@ package challenge.string;
 
 public class Palindrome {
     public static void main(String[] args) {
-        System.out.println("madam is a palindrom: "+isPalindrome("madame"));
+        System.out.println("madam is a palindrome: "+isPalindrome("madame"));
     }
 
     public static boolean isPalindrome(String str){
