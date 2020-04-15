@@ -25,30 +25,6 @@ public class HourGlass {
             }
         }
 
-        /*
-        Last line:
-        First Iteration: a[5][5] + a[5][4] + a[5][3] + a[4][4] + a[3][5] + a[3][4] + a[3][3]
-        i=5 j=5,4,3
-        i=4 j=4
-        i=3 j=5,4,3
-
-        Second Iteration: a[0][1] + a[0][2] + a[0][3] + a[1][2] + a[2][1] + a[2][2] + a[2][3]
-        i=5 j=4,3,2
-        i=4 j=3
-        i=3 j=4,3,2
-
-        last Iteration: a[5][2] + a[5][1] + a[5][0] + a[1][2] + a[2][1] + a[2][2] + a[2][3]
-        i=5 j=2,1,0
-        i=4 j=1
-        i=3 j=2,1,0
-
-        goes up to
-        last Iteration: a[5][2] + a[5][1] + a[5][0] + a[1][2] + a[2][1] + a[2][2] + a[2][3]
-        i=2 j=2,1,0
-        i=1 j=1
-        i=0 j=2,1,0
-        */
-
         int sum = 0 ;
         int maxsum = 0;
         int count = 0;

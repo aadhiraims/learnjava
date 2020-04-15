@@ -44,7 +44,6 @@ public class LexicographicalSubString {
         smallest = strArray[0].toString();
         largest = strArray[strArray.length-1].toString();
 
-
         return smallest + ", " + largest;
     }
 }
